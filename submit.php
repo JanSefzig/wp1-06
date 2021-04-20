@@ -9,15 +9,16 @@
 <body>
     <h1>Vyplněná data<h1>
     <?php
-    $fullname = filter_input(INPUT_POST, 'fullname');
+    $username = filter_input(INPUT_POST, 'username');
+    $username = filter_input(INPUT_POST, 'password');
     $age = filter_input(INPUT_POST, 'age');
-    echo "Bylo vyplněno jméno": $fullname <br>";
+    echo "Bylo vyplněno jméno $username <br>";
     echo "Váš věk: $age";
 
-    if(($age >= 18) && ($fullname == 'Jan Sefzig')) {
-        echo "je ti víc jak 18 a jsi Jan Sefzig";
+    if(($age >= 15) && ($username == 'jansefzig')) {
+        echo "je ti víc jak 15 a jsi Jan Sefzig";
     } else {
-        echo "máš smůlu";
+        echo "není ti více jak 15 let ";
     }
 
 

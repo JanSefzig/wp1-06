@@ -9,13 +9,16 @@
 <body>
     <h1>sčítaní lidu<h1>
     <form action="sumbit.php" method="post">
-        <label for="fullname">Jméno a Příjmení:</label>
-        <input type="text" name="fullname" id="fullname">
+        <label for="username">Jméno a Příjmení:</label>
+        <input type="text" name="Uživatelské jméno" id="username">
+        <br>
+        <label for="password">Heslo:</label>
+        <input type="text" name="Heslo" id="password">
         <br>
         <label for="age">Věk:</label>
-        <input type="number" name="age" id="age" min="0" max="150"
+        <input type="number" name="age" id="age" min="0" max="150">
         <br>
-        <input type="sumbit" value="odeslat">
+        <input type="submit" value="odeslat">
     </form>
 </body>
 </html>
