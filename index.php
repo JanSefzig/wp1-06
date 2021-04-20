@@ -8,7 +8,7 @@
 </head>
 <body>
     <h1>sčítaní lidu<h1>
-    <form action="sumbit.php" method="post">
+    <form action="submit.php" method="post">
         <label for="username">Jméno a Příjmení:</label>
         <input type="text" name="Uživatelské jméno" id="username">
         <br>
